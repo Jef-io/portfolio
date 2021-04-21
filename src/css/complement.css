@@ -22,9 +22,9 @@
 }
 
 .blurred-white-text {
-    font-size: 250px;
+    font-size: 50px;
     color: transparent;
-    text-shadow: 0 0 15px #fafafa;
+    text-shadow: 0 0 5px #fafafa;
     line-height: 0;
     opacity: 0.7;
 }
@@ -48,14 +48,26 @@
   .blurred-text {
     font-size: 400px;
   }
+
+  .blurred-white-text {
+    font-size: 120px;
+  }
 }
 @media (min-width: 1024px) { 
   .blurred-text {
     font-size: 500px;
   }
+  .blurred-white-text {
+    font-size: 130px;
+    text-shadow: 0 0 10px #fafafa;
+  }
 }
 @media (min-width: 1280px) { 
   .blurred-text {
     font-size: 700px;
+  }
+  .blurred-white-text {
+    font-size: 230px;
+    text-shadow: 0 0 15px #fafafa;
   }
 }
