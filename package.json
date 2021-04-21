@@ -20,5 +20,9 @@
   "homepage": "https://github.com/Jef-io/portfolio#readme",
   "dependencies": {
     "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "cssnano": "^5.0.1",
+    "postcss": "^8.2.10"
   }
 }
