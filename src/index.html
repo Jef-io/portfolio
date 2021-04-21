@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./index.js"></script>
-    <link rel="stylesheet" href="../tailwind.css">
+    <title>Jef</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/complement.css">
 </head>
-<body class="font-sans bg-gradient-to-r from-black to-purple-900 text-gray-50">
-    <nav class="absolute right-11 top-4">
+<body class="font-sans bg-gradient-to-r from-black to-purple-900 text-gray-50 overflow-hidden">
+    <nav class="absolute z-20 right-11 top-4">
         <ul class="flex flex-row text-3xl font-semibold space-x-9">
-            <li class="duration-200 hover:text-yellow-500"><a href="#">&lt;Projects /&gt;</a></li>
-            <li class="duration-200 hover:text-yellow-500"><a href="#">&lt;About /&gt;</a></li>
-            <li class="duration-200 hover:text-yellow-500"><a href="#">&lt;Contact /&gt;</a></li>
+            <li class="duration-200 hover:text-yellow-500"><a href="./pages/projects.html">&lt;Projects /&gt;</a></li>
+            <li class="duration-200 hover:text-yellow-500"><a href="./pages/about.html">&lt;About /&gt;</a></li>
+            <li class="duration-200 hover:text-yellow-500"><a href="./pages/contact.html">&lt;Contact /&gt;</a></li>
         </ul>
     </nav>
-    <main class="container mx-auto relative top-64">
-        <h1 class="text-7xl">
-            <span class="text-9xl text-yellow-500 font-semibold -mr-5">J</span>ef 
-            <span class="text-9xl text-yellow-500 font-semibold -mr-4">S</span>choolmeester</h1>
-        <h2 class="text-8xl">Full stack developper</h2>
-        <h2 class="text-7xl text-pink-600">Web Apps</h2>
-        <div>}</div>
+    <main>
+        <section class="relative z-10 left-12 top-64">
+            <h1 class="text-7xl">
+                <span class="text-9xl text-yellow-500 font-semibold -mr-5">J</span>ef 
+                <span class="text-9xl text-yellow-500 font-semibold -mr-4">S</span>choolmeester</h1>
+            <h2 class="text-8xl">Full stack developper</h2>
+            <h2 class="text-7xl text-pink-600" id="competences">Web Apps</h2>
+        </section>
+        <div class="select-none absolute top-80 right-0 blurred-text z-0">&lt;/&gt;</div>
     </main>
 </body>
 </html>

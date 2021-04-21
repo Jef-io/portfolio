@@ -1,0 +1,7 @@
+.blurred-text {
+    font-size: 700px;
+    color: transparent;
+    text-shadow: 0 0 40px #FA8736;
+    line-height: 0;
+    opacity: 0.7;
+}
