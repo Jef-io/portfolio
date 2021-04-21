@@ -5,25 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
+    <script src="../js/projects.js" defer></script>
     <link rel="stylesheet" href="../css/tailwind.css">
     <link rel="stylesheet" href="../css/complement.css">
 </head>
 <body class="font-sans bg-gradient-to-r from-black to-purple-900 text-gray-50 overflow-hidden">
-    <nav class="absolute z-20 right-11 top-4">
-        <ul class="flex flex-row text-3xl font-semibold space-x-9">
-            <li class="duration-200 hover:text-yellow-500"><a href="#">&lt;Projects /&gt;</a></li>
-            <li class="duration-200 hover:text-yellow-500"><a href="#">&lt;About /&gt;</a></li>
-            <li class="duration-200 hover:text-yellow-500"><a href="#">&lt;Contact /&gt;</a></li>
+    <nav class="relative z-20 top-4 w-full flex justify-between">
+        <a class="relative left-11 transition duration-200 hover:text-yellow-500 text-3xl font-semibold space-x-9" href="../index.html">&lt;Home /&gt;</a>
+        <ul class="relative right-11 flex flex-row text-3xl font-semibold space-x-9">
+            <li class="transition duration-200 text-yellow-500"><a href="#">&lt;Projects /&gt;</a></li>
+            <li class="transition duration-200 hover:text-yellow-500"><a href="./about.html">&lt;About /&gt;</a></li>
+            <li class="transition duration-200 hover:text-yellow-500"><a href="./contact.html">&lt;Contact /&gt;</a></li>
         </ul>
     </nav>
-    <main>
-        <ul>
-            <li><h1>TOXI PLAN</h1></li>
-            <li><h1>MCIntosh</h1></li>
-            <li><h1>Crypto Wallet</h1></li>
-            <li><h1>Undercooked</h1></li>
-            <li><h1>Guide's company</h1></li>
-        </ul>
+    <main class="container">
+        <section>
+            <ul class="text-9xl absolute right-0 top-2/4 flex flex-col items-end transform -translate-y-2/4 translate-x-52">
+                <li><h2 id="toxiplantitle" class="my-4 transition duration-300 transform hover:-translate-x-64">
+                    <a class="stroked-text" target="_blank" rel="noopener noreferrer" href="https://toxiplan.com/">{ Toxi Plan }</a>
+                </h2></li>
+                <li><h2 id="mcintoshtitle" class="my-4 transition duration-300 transform hover:-translate-x-64">
+                    <a class="stroked-text" href="#">{ McIntosh }</a>
+                </h2></li>
+                <li><h2 id="cryptotitle" class="my-4 transition duration-300 transform hover:-translate-x-64">
+                    <a class="stroked-text" target="_blank" rel="noopener noreferrer" href="https://github.com/Jef-io/crypto-wallet-app">{ Crypto Wallet }</a>
+                </h2></li>
+                <li><h2 id="undercookedtitle" class="my-4 transition duration-300 transform hover:-translate-x-64">
+                    <a class="stroked-text" href="https://github.com/Jef-io/Undercooked">{ Undercooked }</a>
+                </h2></li>
+            </ul>
+        </section>
+        <div class="select-none absolute top-96 right-2/4 blurred-text z-0">[</div>
+        <div id="toxiplan" class="absolute top-52 ml-64 transition duration-200 w-1/5">
+            <h2 class="text-7xl">Toxiplan</h2>
+            <h3 class="text-6xl text-yellow-400">// Web app</h3>
+            <p class="text-xl mt-10">Front-end: React, Material-ui</p>
+            <p class="text-xl">Back-end: Express.js, MongoDB, Brcypt, JWT</p>
+            <p class="text-lg mt-10 text-justify">
+                This project was made for the company Toxiplan throught the Disrupt'campus device. 
+                Toxiplan needed a tool to enhance their productivity for report and data management. 
+                During this project, I learned scrum as well as some security requirements and the deployment part.
+            </p>
+            <a class="text-lg mt-6 block hover:text-yellow-500" href="https://toxiplan.com/" target="_blank" rel="noopener noreferrer">&lt; ToxiPlan's website /></a>
+        </div>
+        <div id="mcintosh" class="absolute top-52 ml-64 opacity-0 transition duration-200 w-1/5">
+            <h2 class="text-7xl">McIntosh</h2>
+            <h3 class="text-6xl text-yellow-400">// Portfolio</h3>
+            <p class="text-xl mt-10">Next.js, React-Spring</p>
+            <p class="text-lg mt-10 text-justify">
+                Jonathan McIntosh does a lot of projects for museums or cultura spaces. 
+                He even did a 1:1 replica of the perseverance rover for the CNES.
+                But he needed a portfolio to represent his work since he only had a pdf since now.
+                With the help of Maïa Da Silva, we coded and deployed a portfolio that would be easy to update.
+            </p>
+            <a class="text-lg mt-6 block hover:text-yellow-500" href="#" target="_blank" rel="noopener noreferrer">&lt; McIntosh /> (not deployed yet)</a>
+        </div>
+        <div id="crypto" class="absolute top-52 ml-64 opacity-0 transition duration-200 w-1/5">
+            <h2 class="text-7xl">Cryptowallet</h2>
+            <h3 class="text-6xl text-yellow-400">// Web app</h3>
+            <p class="text-xl mt-10">Front-end: React, Material-ui, React Chart</p>
+            <p class="text-xl">Back-end: Express.js, MySQL, CoinGecko</p>
+            <p class="text-lg mt-10 text-justify">
+                Cryptowallet is a project made with Maïa Da Silva.
+                This app lets you follow crypto currencies and get their data and evolution charts.
+                You can also buy or sell some, access to your history and see your wallet evolution.
+            </p>
+            <a class="text-lg mt-6 block hover:text-yellow-500" href="https://github.com/Jef-io/crypto-wallet-app" target="_blank" rel="noopener noreferrer">&lt; Front-end repo /></a>
+            <a class="text-lg hover:text-yellow-500" href="https://github.com/Jef-io/crypto-wallet-api" target="_blank" rel="noopener noreferrer">&lt; Back-end repo /></a>
+        </div>
+        <div id="undercooked" class="absolute top-52 ml-64 opacity-0 transition duration-200 w-1/5">
+            <h2 class="text-7xl">Undercooked</h2>
+            <h3 class="text-6xl text-yellow-400">// Game</h3>
+            <p class="text-xl mt-10">Java, JavaFX, Maven, MongoDB</p>
+            <p class="text-lg mt-10 text-justify">
+                Undercooked is a small JavaFX game where you controll a pizzaiolo. 
+                In this game, you recieve orders and have to deliver them, have access to a set of tools in order to cook some delicious pizzas.
+                There are two different languages and 5 difficulties.
+            </p>
+            <a class="text-lg mt-6 block hover:text-yellow-500" href="https://github.com/Jef-io/undercooked" target="_blank" rel="noopener noreferrer">&lt; GitHub Repo /></a>
+        </div>
     </main>
 </body>
 </html>
