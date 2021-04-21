@@ -1,20 +1,20 @@
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-  }
-  ::-webkit-scrollbar-button {
-    width: 0px;
-    height: 0px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #FA8736;
-  }
-  ::-webkit-scrollbar-track {
-    background: #841BD4;
-  }
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #FA8736;
+}
+::-webkit-scrollbar-track {
+  background: #841BD4;
+}
 
 .blurred-text {
-    font-size: 700px;
+    font-size: 200px;
     color: transparent;
     text-shadow: 0 0 40px #FA8736;
     line-height: 0;
@@ -39,4 +39,23 @@
 .stroked-text:hover {
     color: #fafafa;
     -webkit-text-stroke: none;
+}
+
+@media (min-width: 640px) { 
+
+}
+@media (min-width: 768px) { 
+  .blurred-text {
+    font-size: 400px;
+  }
+}
+@media (min-width: 1024px) { 
+  .blurred-text {
+    font-size: 500px;
+  }
+}
+@media (min-width: 1280px) { 
+  .blurred-text {
+    font-size: 700px;
+  }
 }
