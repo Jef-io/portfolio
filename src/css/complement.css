@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #FA8736;
+  }
+  ::-webkit-scrollbar-track {
+    background: #841BD4;
+  }
+
 .blurred-text {
     font-size: 700px;
     color: transparent;
