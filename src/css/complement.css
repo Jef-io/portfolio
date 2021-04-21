@@ -5,3 +5,23 @@
     line-height: 0;
     opacity: 0.7;
 }
+
+.blurred-white-text {
+    font-size: 250px;
+    color: transparent;
+    text-shadow: 0 0 15px #fafafa;
+    line-height: 0;
+    opacity: 0.7;
+}
+
+.stroked-text {
+    color: transparent;
+    -webkit-text-stroke: 1px #fafafa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.stroked-text:hover {
+    color: #fafafa;
+    -webkit-text-stroke: none;
+}
