@@ -37,7 +37,7 @@ const animateTransition = async (start, end) => {
     }
 }
 
-let competences = ['Web Apps', 'Websites', 'Front-end', 'Back-end'];
+const competences = ['Web Apps', 'Websites', 'Front-end', 'Back-end'];
 let competenceId = 0;
 
 setInterval(() => {
