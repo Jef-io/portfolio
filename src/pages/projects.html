@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/complement.css">
     <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
 </head>
-<body class="font-sans bg-gradient-to-r from-black to-purple-900 text-gray-50 overflow-hidden">
+<body class="font-sans bg-gradient-to-r from-black to-purple-900 text-gray-50 xl:overflow-hidden overflow-x-hidden">
     <nav class="relative z-20 top-4 w-full flex justify-between">
         <a class="relative md:left-11 transition duration-200 hover:text-yellow-500 md:text-3xl font-semibold" href="../index.html">&lt;Home /&gt;</a>
         <ul class="relative md:right-11 flex flex-row md:text-3xl font-semibold md:space-x-5 lg:space-x-9">
@@ -28,69 +28,72 @@
     </nav> -->
     <main class="container">
         <section>
-            <ul class="xl:text-9xl lg:text-8xl text-5xl lg:absolute lg:right-0 top-2/4 flex flex-col lg:items-end items-center lg:transform lg:-translate-y-2/4 mt-20 lg:translate-x-52">
-                <li><h2 id="toxiplantitle" class="cursor-pointer stroked-text my-4 transition duration-300 transform lg:hover:-translate-x-64">{ Toxi Plan }
+            <ul class="xl:text-9xl lg:text-8xl md:text-5xl text-3xl xl:absolute xl:right-0 top-2/4 flex flex-col xl:items-end items-center xl:transform xl:-translate-y-2/4 mt-20 xl:translate-x-52">
+                <li><h2 id="toxiplantitle" class="cursor-pointer stroked-text my-4 transition duration-300 transform xl:hover:-translate-x-64">
+                    { Toxi Plan }
                 </h2></li>
-                <li><h2 id="mcintoshtitle" class="cursor-pointer stroked-text my-4 transition duration-300 transform lg:hover:-translate-x-64">
+                <li><h2 id="mcintoshtitle" class="cursor-pointer stroked-text my-4 transition duration-300 transform xl:hover:-translate-x-64">
                     { McIntosh }
                 </h2></li>
-                <li><h2 id="cryptotitle" class="cursor-pointer stroked-text my-4 transition duration-300 transform lg:hover:-translate-x-64">
+                <li><h2 id="cryptotitle" class="cursor-pointer stroked-text my-4 transition duration-300 transform xl:hover:-translate-x-64">
                     { Crypto Wallet }
                 </h2></li>
-                <li><h2 id="undercookedtitle" class="cursor-pointer stroked-text my-4 transition duration-300 transform lg:hover:-translate-x-64">
+                <li><h2 id="undercookedtitle" class="cursor-pointer stroked-text my-4 transition duration-300 transform xl:hover:-translate-x-64">
                     { Undercooked }
                 </h2></li>
             </ul>
         </section>
         <div class="select-none absolute top-96 right-2/4 blurred-text z-0">[</div>
-        <div id="toxiplan" class="absolute lg:top-52 lg:ml-20 xl:ml-64 transition duration-200 xl:w-1/5 lg:w-2/5">
-            <h2 class="lg:text-7xl text-6xl">Toxiplan</h2>
-            <h3 class="text-6xl text-yellow-400">// Web app</h3>
-            <p class="text-xl mt-10">Front-end: React, Material-ui</p>
-            <p class="text-xl">Back-end: Express.js, MongoDB, Brcypt, JWT</p>
-            <p class="text-lg mt-10 text-justify">
-                This project was made for the company Toxiplan throught the Disrupt'campus device. 
-                Toxiplan needed a tool to enhance their productivity for report and data management. 
-                During this project, I learned scrum as well as some security requirements and the deployment part.
-            </p>
-            <a class="text-lg mt-6 block hover:text-yellow-500" href="https://toxiplan.com/" target="_blank" rel="noopener noreferrer">&lt; ToxiPlan's website /></a>
-        </div>
-        <div id="mcintosh" class="absolute lg:top-52 lg:ml-20 xl:ml-64 opacity-0 transition duration-200 xl:w-1/5 lg:w-2/5">
-            <h2 class="lg:text-7xl text-6xl">McIntosh</h2>
-            <h3 class="text-6xl text-yellow-400">// Portfolio</h3>
-            <p class="text-xl mt-10">Next.js, React-Spring</p>
-            <p class="text-lg mt-10 text-justify">
-                Jonathan McIntosh does a lot of projects for museums or cultura spaces. 
-                He even did a 1:1 replica of the perseverance rover for the CNES.
-                But he needed a portfolio to represent his work since he only had a pdf since now.
-                With the help of Maïa Da Silva, we coded and deployed a portfolio that would be easy to update.
-            </p>
-            <a class="text-lg mt-6 block hover:text-yellow-500" href="#" target="_blank" rel="noopener noreferrer">&lt; McIntosh /> (not deployed yet)</a>
-        </div>
-        <div id="crypto" class="absolute lg:top-52 lg:ml-20 xl:ml-64 opacity-0 transition duration-200 xl:w-1/5 lg:w-2/5">
-            <h2 class="lg:text-7xl text-6xl">Cryptowallet</h2>
-            <h3 class="text-6xl text-yellow-400">// Web app</h3>
-            <p class="text-xl mt-10">Front-end: React, Material-ui, React Chart</p>
-            <p class="text-xl">Back-end: Express.js, MySQL, CoinGecko</p>
-            <p class="text-lg mt-10 text-justify">
-                Cryptowallet is a project made with Maïa Da Silva.
-                This app lets you follow crypto currencies and get their data and evolution charts.
-                You can also buy or sell some, access to your history and see your wallet evolution.
-            </p>
-            <a class="text-lg mt-6 block hover:text-yellow-500" href="https://github.com/Jef-io/crypto-wallet-app" target="_blank" rel="noopener noreferrer">&lt; Front-end repo /></a>
-            <a class="text-lg hover:text-yellow-500" href="https://github.com/Jef-io/crypto-wallet-api" target="_blank" rel="noopener noreferrer">&lt; Back-end repo /></a>
-        </div>
-        <div id="undercooked" class="absolute lg:top-52 lg:ml-20 xl:ml-64 opacity-0 transition duration-200 xl:w-1/5 lg:w-2/5">
-            <h2 class="lg:text-7xl text-6xl">Undercooked</h2>
-            <h3 class="text-6xl text-yellow-400">// Game</h3>
-            <p class="text-xl mt-10">Java, JavaFX, Maven, MongoDB</p>
-            <p class="text-lg mt-10 text-justify">
-                Undercooked is a small JavaFX game where you controll a pizzaiolo. 
-                In this game, you recieve orders and have to deliver them, have access to a set of tools in order to cook some delicious pizzas.
-                There are two different languages and 5 difficulties.
-            </p>
-            <a class="text-lg mt-6 block hover:text-yellow-500" href="https://github.com/Jef-io/undercooked" target="_blank" rel="noopener noreferrer">&lt; GitHub Repo /></a>
-        </div>
+        <section class="xl:absolute relative xl:top-52 xl:ml-20 xl:ml-64 xl:w-1/5 lg:w-2/5">
+            <div id="toxiplan" class="absolute transition duration-200">
+                <h2 class="lg:text-7xl text-6xl">Toxiplan</h2>
+                <h3 class="text-6xl text-yellow-400">// Web app</h3>
+                <p class="text-xl mt-10">Front-end: React, Material-ui</p>
+                <p class="text-xl">Back-end: Express.js, MongoDB, Brcypt, JWT</p>
+                <p class="text-lg mt-10 text-justify">
+                    This project was made for the company Toxiplan throught the Disrupt'campus device. 
+                    Toxiplan needed a tool to enhance their productivity for report and data management. 
+                    During this project, I learned scrum as well as some security requirements and the deployment part.
+                </p>
+                <a class="text-lg mt-6 block hover:text-yellow-500" href="https://toxiplan.com/" target="_blank" rel="noopener noreferrer">&lt; ToxiPlan's website /></a>
+            </div>
+            <div id="mcintosh" class="absolute opacity-0 transition duration-200">
+                <h2 class="lg:text-7xl text-6xl">McIntosh</h2>
+                <h3 class="text-6xl text-yellow-400">// Portfolio</h3>
+                <p class="text-xl mt-10">Next.js, React-Spring</p>
+                <p class="text-lg mt-10 text-justify">
+                    Jonathan McIntosh does a lot of projects for museums or cultura spaces. 
+                    He even did a 1:1 replica of the perseverance rover for the CNES.
+                    But he needed a portfolio to represent his work since he only had a pdf since now.
+                    With the help of Maïa Da Silva, we coded and deployed a portfolio that would be easy to update.
+                </p>
+                <a class="text-lg mt-6 block hover:text-yellow-500" href="#" target="_blank" rel="noopener noreferrer">&lt; McIntosh /> (not deployed yet)</a>
+            </div>
+            <div id="crypto" class="absolute opacity-0 transition duration-200 ">
+                <h2 class="lg:text-7xl text-6xl">Cryptowallet</h2>
+                <h3 class="text-6xl text-yellow-400">// Web app</h3>
+                <p class="text-xl mt-10">Front-end: React, Material-ui, React Chart</p>
+                <p class="text-xl">Back-end: Express.js, MySQL, CoinGecko</p>
+                <p class="text-lg mt-10 text-justify">
+                    Cryptowallet is a project made with Maïa Da Silva.
+                    This app lets you follow crypto currencies and get their data and evolution charts.
+                    You can also buy or sell some, access to your history and see your wallet evolution.
+                </p>
+                <a class="text-lg mt-6 block hover:text-yellow-500" href="https://github.com/Jef-io/crypto-wallet-app" target="_blank" rel="noopener noreferrer">&lt; Front-end repo /></a>
+                <a class="text-lg hover:text-yellow-500" href="https://github.com/Jef-io/crypto-wallet-api" target="_blank" rel="noopener noreferrer">&lt; Back-end repo /></a>
+            </div>
+            <div id="undercooked" class="absolute opacity-0 transition duration-200">
+                <h2 class="lg:text-7xl text-6xl">Undercooked</h2>
+                <h3 class="text-6xl text-yellow-400">// Game</h3>
+                <p class="text-xl mt-10">Java, JavaFX, Maven, MongoDB</p>
+                <p class="text-lg mt-10 text-justify">
+                    Undercooked is a small JavaFX game where you controll a pizzaiolo. 
+                    In this game, you recieve orders and have to deliver them, have access to a set of tools in order to cook some delicious pizzas.
+                    There are two different languages and 5 difficulties.
+                </p>
+                <a class="text-lg mt-6 block hover:text-yellow-500" href="https://github.com/Jef-io/undercooked" target="_blank" rel="noopener noreferrer">&lt; GitHub Repo /></a>
+            </div>
+        </section>
     </main>
 </body>
 </html>
