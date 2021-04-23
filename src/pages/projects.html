@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/complement.css">
     <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
 </head>
-<body class="font-sans bg-gradient-to-r from-black to-purple-900 text-gray-50 xl:overflow-hidden overflow-x-hidden">
+<body class="font-sans bg-gradient-to-r from-black to-purple-900 text-gray-50 2xl:overflow-hidden overflow-x-hidden">
     <nav class="relative z-20 top-4 w-full flex justify-between">
         <a class="relative md:left-11 transition duration-200 hover:text-yellow-500 md:text-3xl font-semibold" href="../index.html">&lt;Home /&gt;</a>
         <ul class="relative md:right-11 flex flex-row md:text-3xl font-semibold md:space-x-5 lg:space-x-9">
@@ -19,35 +19,28 @@
             <li class="transition duration-200 hover:text-yellow-500"><a href="./contact.html">&lt;Contact /&gt;</a></li>
         </ul>
     </nav>
-    <!-- <nav class="absolute z-20 md:right-11 right-2 top-4">
-        <ul class="flex flex-row md:text-3xl font-semibold md:space-x-5 lg:space-x-9">
-            <li class="duration-200 hover:text-yellow-500"><a href="./pages/projects.html">&lt;Projects /&gt;</a></li>
-            <li class="duration-200 hover:text-yellow-500"><a href="./pages/about.html">&lt;About /&gt;</a></li>
-            <li class="duration-200 hover:text-yellow-500"><a href="./pages/contact.html">&lt;Contact /&gt;</a></li>
-        </ul>
-    </nav> -->
-    <main class="container">
+    <main class="flex flex-col xl:flex-row-reverse xl:justify-between xl:mt-20">
         <section>
-            <ul class="xl:text-9xl lg:text-8xl md:text-5xl text-3xl xl:absolute xl:right-0 top-2/4 flex flex-col xl:items-end items-center xl:transform xl:-translate-y-2/4 mt-20 xl:translate-x-52">
-                <li><h2 id="toxiplantitle" class="cursor-pointer stroked-text my-4 transition duration-300 transform xl:hover:-translate-x-64">
+            <ul class="relative text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl mt-20 flex flex-col items-center xl:items-end xl:transform xl:translate-x-20 2xl:translate-x-52">
+                <li><h2 id="toxiplantitle" class="w-max cursor-pointer stroked-text my-4 transition duration-300 transform xl:hover:-translate-x-24 2xl:hover:-translate-x-64">
                     { Toxi Plan }
                 </h2></li>
-                <li><h2 id="mcintoshtitle" class="cursor-pointer stroked-text my-4 transition duration-300 transform xl:hover:-translate-x-64">
+                <li><h2 id="mcintoshtitle" class="w-max cursor-pointer stroked-text my-4 transition duration-300 transform xl:hover:-translate-x-24 2xl:hover:-translate-x-64">
                     { McIntosh }
                 </h2></li>
-                <li><h2 id="cryptotitle" class="cursor-pointer stroked-text my-4 transition duration-300 transform xl:hover:-translate-x-64">
-                    { Crypto Wallet }
+                <li><h2 id="cryptotitle" class="w-max cursor-pointer stroked-text my-4 transition duration-300 transform xl:hover:-translate-x-24 2xl:hover:-translate-x-64">
+                    { CryptoWallet }
                 </h2></li>
-                <li><h2 id="undercookedtitle" class="cursor-pointer stroked-text my-4 transition duration-300 transform xl:hover:-translate-x-64">
+                <li><h2 id="undercookedtitle" class="w-max cursor-pointer stroked-text my-4 transition duration-300 transform xl:hover:-translate-x-24 2xl:hover:-translate-x-64">
                     { Undercooked }
                 </h2></li>
             </ul>
         </section>
         <div class="select-none absolute top-96 right-2/4 blurred-text z-0">[</div>
-        <section class="xl:absolute relative xl:top-52 xl:ml-20 xl:ml-64 xl:w-1/5 lg:w-2/5">
-            <div id="toxiplan" class="absolute transition duration-200">
-                <h2 class="lg:text-7xl text-6xl">Toxiplan</h2>
-                <h3 class="text-6xl text-yellow-400">// Web app</h3>
+        <section class="relative mt-20 flex justify-center xl:w-2/4">
+            <div id="toxiplan" class="w-3/5 absolute transition duration-200">
+                <h2 class="lg:text-7xl text-5xl">Toxiplan</h2>
+                <h3 class="lg:text-6xl text-5xl text-yellow-400">// Web app</h3>
                 <p class="text-xl mt-10">Front-end: React, Material-ui</p>
                 <p class="text-xl">Back-end: Express.js, MongoDB, Brcypt, JWT</p>
                 <p class="text-lg mt-10 text-justify">
@@ -57,9 +50,9 @@
                 </p>
                 <a class="text-lg mt-6 block hover:text-yellow-500" href="https://toxiplan.com/" target="_blank" rel="noopener noreferrer">&lt; ToxiPlan's website /></a>
             </div>
-            <div id="mcintosh" class="absolute opacity-0 transition duration-200">
-                <h2 class="lg:text-7xl text-6xl">McIntosh</h2>
-                <h3 class="text-6xl text-yellow-400">// Portfolio</h3>
+            <div id="mcintosh" class="w-3/5 absolute transition duration-200 opacity-0">
+                <h2 class="lg:text-7xl text-5xl">McIntosh</h2>
+                <h3 class="lg:text-6xl text-5xl text-yellow-400">// Portfolio</h3>
                 <p class="text-xl mt-10">Next.js, React-Spring</p>
                 <p class="text-lg mt-10 text-justify">
                     Jonathan McIntosh does a lot of projects for museums or cultura spaces. 
@@ -69,9 +62,9 @@
                 </p>
                 <a class="text-lg mt-6 block hover:text-yellow-500" href="#" target="_blank" rel="noopener noreferrer">&lt; McIntosh /> (not deployed yet)</a>
             </div>
-            <div id="crypto" class="absolute opacity-0 transition duration-200 ">
-                <h2 class="lg:text-7xl text-6xl">Cryptowallet</h2>
-                <h3 class="text-6xl text-yellow-400">// Web app</h3>
+            <div id="crypto" class="w-3/5 absolute transition duration-200 opacity-0">
+                <h2 class="lg:text-7xl text-5xl">Cryptowallet</h2>
+                <h3 class="lg:text-6xl text-5xl text-yellow-400">// Web app</h3>
                 <p class="text-xl mt-10">Front-end: React, Material-ui, React Chart</p>
                 <p class="text-xl">Back-end: Express.js, MySQL, CoinGecko</p>
                 <p class="text-lg mt-10 text-justify">
@@ -82,9 +75,9 @@
                 <a class="text-lg mt-6 block hover:text-yellow-500" href="https://github.com/Jef-io/crypto-wallet-app" target="_blank" rel="noopener noreferrer">&lt; Front-end repo /></a>
                 <a class="text-lg hover:text-yellow-500" href="https://github.com/Jef-io/crypto-wallet-api" target="_blank" rel="noopener noreferrer">&lt; Back-end repo /></a>
             </div>
-            <div id="undercooked" class="absolute opacity-0 transition duration-200">
-                <h2 class="lg:text-7xl text-6xl">Undercooked</h2>
-                <h3 class="text-6xl text-yellow-400">// Game</h3>
+            <div id="undercooked" class="w-3/5 absolute transition duration-200 opacity-0">
+                <h2 class="lg:text-7xl text-5xl">Undercooked</h2>
+                <h3 class="lg:text-6xl text-5xl text-yellow-400">// Game</h3>
                 <p class="text-xl mt-10">Java, JavaFX, Maven, MongoDB</p>
                 <p class="text-lg mt-10 text-justify">
                     Undercooked is a small JavaFX game where you controll a pizzaiolo. 
